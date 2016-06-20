@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=g\ width\ yScroll\ contents
+comment0.target=void\ draw(java.awt.Graphics,\ int,\ int,\ java.io.File[])
+comment1.params=g\ f\ x\ y
+comment1.target=void\ drawIcon(java.awt.Graphics,\ java.io.File,\ int,\ int)
+comment2.params=g\ f\ x\ y
+comment2.target=void\ drawName(java.awt.Graphics,\ java.io.File,\ int,\ int)
+numComments=3
