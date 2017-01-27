@@ -5,7 +5,14 @@ public class openFile
     File[] selectedFiles;//files in selected folder
     public openFile()
     {
-        changePath("C:/");
+        if(System.getProperty("os.name")=="Windows")
+        {
+            changePath("C:/");
+        }
+        else
+        {
+            changePath("/");
+        }
     }
 
     public File[] getFiles()
