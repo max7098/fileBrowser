@@ -27,7 +27,14 @@ public class openFile
     
     public void backButtonClicked()
     {
+     
         try{
+        //handle spaces
+        if(selectedPath.lastIndexOf(' ')>selectedPath.substring(0,selectedPath.length()-1).lastIndexOf("/"))
+        {
+
+        selectedPath = selectedPath.substring(0,selectedPath.lastIndexOf(" ",selectedPath.substring(0,selectedPath.length()-1).lastIndexOf("/"))); //get rid of all spaces between your last two /'s
+        }
         selectedPath = selectedPath.substring(0,selectedPath.substring(0,selectedPath.length()-1).lastIndexOf("/")) + "/";     
         }catch(Exception e){};
         //this algorithm looks really complicated but it just removes everything between the last two '/'s and deletes one of the '/'s
