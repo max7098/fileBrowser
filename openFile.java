@@ -1,3 +1,6 @@
+//this class represents the current open folder
+
+
 import java.io.File;
 public class openFile
 {

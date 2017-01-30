@@ -22,6 +22,16 @@ public class runProgram extends JComponent
             {
                 public void mouseClicked(MouseEvent e)
                 {
+                    /*
+                    System.out.println("files " );
+                    for(File f:current.getFiles())
+                    {
+                        System.out.println(f.getName());
+                    }
+                    */
+
+
+
                     checkBackClicked(e.getX(),e.getY());
                     current.changePath(clickBoxes.fileClicked(width, 0 , current.getFiles(),e.getX(),e.getY() ));
                 }
